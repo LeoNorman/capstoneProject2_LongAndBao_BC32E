@@ -26,6 +26,10 @@ li {
         justify-content: space-between;
         margin: 0 24px;
 
+        @media screen and (max-width: 576px) {
+            margin: 0 10px;
+        }
+
         .left {
             height: 50px;
             display: flex;
@@ -47,7 +51,14 @@ li {
                 align-items: center;
 
                 a {
-                    img {}
+                    img {
+                        display: block;
+                        width: 100%;
+
+                        @media screen and (max-width: 576px) {
+                            width: 21px;
+                        }
+                    }
                 }
 
                 .soLuong {
@@ -58,6 +69,10 @@ li {
                         color: #ffffff;
                         font-size: 30px;
                         font-weight: 300;
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 21px;
+                        }
                     }
                 }
             }
@@ -67,6 +82,10 @@ li {
                 margin-left: 10px;
                 margin-right: 20px;
 
+                @media screen and (max-width: 576px) {
+                    margin-right: 0;
+                }
+
                 .login {
                     margin-right: 20px;
 
@@ -74,6 +93,10 @@ li {
                         font-size: 15px;
                         font-weight: 300;
                         color: #ffffff;
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 13px;
+                        }
                     }
                 }
 
@@ -82,6 +105,10 @@ li {
                         font-size: 15px;
                         font-weight: 300;
                         color: #ffffff;
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 13px;
+                        }
                     }
                 }
             }
@@ -133,6 +160,11 @@ li {
             a {
                 color: #000;
                 font-size: 20px;
+
+                @media screen and (max-width: 576px) {
+                    margin-right: 0;
+                    font-size: 15px;
+                }
             }
 
             .gender {
@@ -198,15 +230,24 @@ li {
     margin-top: 5px;
     position: relative;
 
-    .container {
+    .container_ {
         margin: 0 86px;
         display: flex;
         position: relative;
         z-index: 2;
 
+        @media screen and(max-width: 992px) {
+            display: block;
+            margin: 0;
+        }
+
         .left {
             .thumbnail {
+                @media screen and (max-width: 576px) {
+                    margin-top: 40px;
+                }
                 img {
+                    display: block;
                     width: 100%;
                 }
             }
@@ -215,6 +256,10 @@ li {
         .right {
             display: flex;
             align-items: center;
+
+            @media screen and (max-width: 992px) {
+                justify-content: center;
+            }
 
             .detail {
                 h1 {
@@ -249,6 +294,10 @@ li {
         left: 0;
         z-index: 1;
 
+        @media screen and (max-width: 992px) {
+            position: relative;
+        }
+
         img {
             display: block;
             width: 100%;
@@ -270,62 +319,76 @@ li {
     }
 
     .grid-container {
-        margin: 0 46px 89px 99px ;
+        margin: 0 46px 89px 99px;
+
+        @media screen and (max-width:576px) {
+            margin: 0 40px 89px 45px;
+        }
         .grid-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 67px;
             .grid-item {
-                background-color: #F8F8F8;
+                padding: 30px;
 
-                .thumbnail {
-                    img {
-                        padding: 45px 57px;
-                    }
+                @media screen and (max-width: 992px) {
+                    padding: 20px;
                 }
-
-                .detail {
-                    margin-left: 23px;
-                    h1 {
-                        font-size: 24px;
-                        font-weight: 300;
-                    }
-
-                    p {
-                        color: 
-                        #CBC9C9;
-                        font-size: 20px;
-                        font-weight: 300;
-                    }
-                }
-
-                .pay {
-                    text-align: center;
-                    .btn-buy {
-                        height: 52px;
-                        float: left;
-                        width: 50%;
-                        a {
-                            color: #000;
-                            background-color: #E1B067;
-                            display: inline-block;
+                .card {
+                    background-color: #f8f8f8;
+                    border: none;
+                    .thumbnail {
+                        img {
+                            padding: 45px 57px 30px;
+                            display: block;
                             width: 100%;
-                            height: 100%;
-                            line-height: 52px;
+                        }
+                    }
+
+                    .detail {
+                        margin: 0 23px;
+
+                        h1 {
                             font-size: 24px;
+                            font-weight: 300;
+                        }
+
+                        p {
+                            color:
+                                #CBC9C9;
+                            font-size: 20px;
                             font-weight: 300;
                         }
                     }
 
-                    .price {
-                        background-color:#DEDDDC ;
-                        float: right;
-                        width: 50%;
-                        p {
-                            font-size: 24px;
-                            font-weight: 600;
-                            line-height: 52px;
-                            margin: 0;
+                    .pay {
+                        text-align: center;
+
+                        .btn-buy {
+                            height: 52px;
+                            float: left;
+                            width: 50%;
+
+                            a {
+                                color: #000;
+                                background-color: #E1B067;
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+                                line-height: 52px;
+                                font-size: 24px;
+                                font-weight: 300;
+                            }
+                        }
+
+                        .price {
+                            background-color: #DEDDDC;
+                            float: right;
+                            width: 50%;
+
+                            p {
+                                font-size: 24px;
+                                font-weight: 600;
+                                line-height: 52px;
+                                margin: 0;
+                            }
                         }
                     }
                 }
