@@ -192,9 +192,14 @@ li {
   display: flex;
   padding: 0;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   .product_detail .container {
     display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .product_detail .container {
+    padding: 50px;
   }
 }
 .product_detail .container .thumbnail {
@@ -206,7 +211,12 @@ li {
 }
 @media screen and (max-width: 992px) {
   .product_detail .container .thumbnail {
-    width: 334px;
+    margin-bottom: 240px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .product_detail .container .thumbnail {
+    margin-bottom: 70px;
   }
 }
 .product_detail .container .thumbnail img {
@@ -214,12 +224,47 @@ li {
   width: 100%;
   padding: 109px 57px 90px;
 }
+@media screen and (max-width: 1199px) {
+  .product_detail .container .thumbnail img {
+    padding: 65px 30px 90px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .product_detail .container .thumbnail img {
+    padding: 65px 10px 90px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .product_detail .container .thumbnail img {
+    padding: 109px 57px 90px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .product_detail .container .thumbnail img {
+    padding: 50px 20px 15px;
+  }
+}
 .product_detail .container .detail {
   padding: 0;
 }
 .product_detail .container .detail .card_detail {
   margin-left: 128px;
   margin-right: 188px;
+}
+@media screen and (max-width: 1199px) {
+  .product_detail .container .detail .card_detail {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .product_detail .container .detail .card_detail {
+    margin: 0 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .product_detail .container .detail .card_detail {
+    margin: 0;
+  }
 }
 .product_detail .container .detail .card_detail h1 {
   font-size: 30px;
@@ -295,11 +340,26 @@ li {
 }
 
 .relate-product {
-  margin-top: 160px;
+  margin-top: 45px;
+}
+@media screen and (max-width: 576px) {
+  .relate-product {
+    margin-top: 100px;
+  }
 }
 .relate-product .title {
   margin-bottom: 89px;
   text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .relate-product .title {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .relate-product .title {
+    margin-bottom: 50px;
+  }
 }
 .relate-product .title h2 {
   font-size: 40px;
@@ -308,17 +368,42 @@ li {
 .relate-product .grid-container {
   margin: 0 46px 89px 99px;
 }
+@media screen and (max-width: 1050px) {
+  .relate-product .grid-container {
+    margin: 0 46px 89px 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .relate-product .grid-container {
+    margin: 0 46px 70px 46px;
+  }
+}
 @media screen and (max-width: 576px) {
   .relate-product .grid-container {
-    margin: 0 40px 89px 45px;
+    margin: 0 70px 89px 70px;
   }
 }
 .relate-product .grid-container .grid-content .grid-item {
   padding: 30px;
 }
+@media screen and (max-width: 1150px) {
+  .relate-product .grid-container .grid-content .grid-item {
+    padding: 15px;
+  }
+}
 @media screen and (max-width: 992px) {
   .relate-product .grid-container .grid-content .grid-item {
-    padding: 20px;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .relate-product .grid-container .grid-content .grid-item {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .relate-product .grid-container .grid-content .grid-item {
+    padding: 20px 10px;
   }
 }
 .relate-product .grid-container .grid-content .grid-item .card {
@@ -330,6 +415,11 @@ li {
   display: block;
   width: 100%;
 }
+@media screen and (max-width: 1150px) {
+  .relate-product .grid-container .grid-content .grid-item .card .thumbnail img {
+    padding: 20px 34px 0px;
+  }
+}
 .relate-product .grid-container .grid-content .grid-item .card .detail {
   margin: 0 23px;
 }
@@ -337,10 +427,22 @@ li {
   font-size: 24px;
   font-weight: 300;
 }
+@media screen and (max-width: 992px) {
+  .relate-product .grid-container .grid-content .grid-item .card .detail h1 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
 .relate-product .grid-container .grid-content .grid-item .card .detail p {
   color: #CBC9C9;
   font-size: 20px;
   font-weight: 300;
+}
+@media screen and (max-width: 992px) {
+  .relate-product .grid-container .grid-content .grid-item .card .detail p {
+    font-size: 18px;
+    font-weight: 300;
+  }
 }
 .relate-product .grid-container .grid-content .grid-item .card .pay {
   text-align: center;
@@ -360,6 +462,12 @@ li {
   font-size: 24px;
   font-weight: 300;
 }
+@media screen and (max-width: 992px) {
+  .relate-product .grid-container .grid-content .grid-item .card .pay .btn-buy a {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
 .relate-product .grid-container .grid-content .grid-item .card .pay .price {
   background-color: #DEDDDC;
   float: right;
@@ -371,8 +479,34 @@ li {
   line-height: 52px;
   margin: 0;
 }
+@media screen and (max-width: 992px) {
+  .relate-product .grid-container .grid-content .grid-item .card .pay .price p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
 
 footer .footer_img img {
   display: block;
   width: 100%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 34px;
+  right: 85px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #DEDDDC;
+  color: #909091;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#myBtn:hover {
+  background-color: #555;
+  color: #ffffff;
 }

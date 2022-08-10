@@ -246,6 +246,7 @@ li {
                 @media screen and (max-width: 576px) {
                     margin-top: 40px;
                 }
+
                 img {
                     display: block;
                     width: 100%;
@@ -269,11 +270,11 @@ li {
                     @media screen and (max-width: 992px) {
                         font-size: 35px;
                     }
-                    
+
                     @media screen and (max-width: 768px) {
                         font-size: 40px;
                     }
-            
+
                     @media screen and (max-width: 576px) {
                         font-size: 35px;
 
@@ -287,11 +288,11 @@ li {
                     @media screen and (max-width: 992px) {
                         font-size: 18px;
                     }
-                    
+
                     @media screen and (max-width: 768px) {
                         font-size: 20px;
                     }
-            
+
                     @media screen and (max-width: 576px) {
                         font-size: 18px;
                     }
@@ -311,11 +312,11 @@ li {
                         @media screen and (max-width: 992px) {
                             font-size: 15px;
                         }
-                        
+
                         @media screen and (max-width: 768px) {
                             font-size: 20px;
                         }
-                
+
                         @media screen and (max-width: 576px) {
                             font-size: 15px;
                         }
@@ -334,7 +335,7 @@ li {
         @media screen and (max-width: 992px) {
             position: absolute;
         }
-        
+
         @media screen and (max-width: 768px) {
             position: absolute;
             top: 400px;
@@ -355,18 +356,23 @@ li {
 .product-feature {
     margin-top: 160px;
 
-    @media screen and (max-width: 992px) {
-    }
-    
-    @media screen and (max-width: 768px) {
-    }
-
     @media screen and (max-width: 576px) {
+        margin-top: 100px;
     }
 
     .title {
         margin-bottom: 89px;
         text-align: center;
+
+        @media screen and (max-width: 992px) {
+            margin-bottom: 60px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: 576px) {}
 
         h2 {
             font-size: 40px;
@@ -377,24 +383,51 @@ li {
     .grid-container {
         margin: 0 46px 89px 99px;
 
-        @media screen and (max-width:576px) {
-            margin: 0 40px 89px 45px;
+        @media screen and (max-width: 1050px) {
+            margin: 0 46px 89px 70px;
         }
+
+        @media screen and (max-width: 768px) {
+            margin: 0 46px 70px 46px;
+        }
+
+        @media screen and (max-width: 576px) {
+            margin: 0 70px 89px 70px;
+        }
+
         .grid-content {
             .grid-item {
                 padding: 30px;
 
-                @media screen and (max-width: 992px) {
-                    padding: 20px;
+                @media screen and (max-width: 1150px) {
+                    padding: 15px;
                 }
+
+                @media screen and (max-width: 992px) {
+                    padding: 30px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    padding: 10px;
+                }
+
+                @media screen and (max-width: 576px) {
+                    padding: 20px 10px;
+                }
+
                 .card {
                     background-color: #f8f8f8;
                     border: none;
+
                     .thumbnail {
                         img {
                             padding: 45px 57px 30px;
                             display: block;
                             width: 100%;
+
+                            @media screen and (max-width: 1150px) {
+                                padding: 20px 34px 0px;
+                            }
                         }
                     }
 
@@ -404,6 +437,11 @@ li {
                         h1 {
                             font-size: 24px;
                             font-weight: 300;
+
+                            @media screen and (max-width: 992px) {
+                                font-size: 20px;
+                                font-weight: 400;
+                            }
                         }
 
                         p {
@@ -411,6 +449,15 @@ li {
                                 #CBC9C9;
                             font-size: 20px;
                             font-weight: 300;
+
+                            @media screen and (max-width: 992px) {
+                                font-size: 18px;
+                                font-weight: 300;
+                            }
+
+                            @media screen and (max-width: 768px) {}
+
+                            @media screen and (max-width: 576px) {}
                         }
                     }
 
@@ -431,6 +478,11 @@ li {
                                 line-height: 52px;
                                 font-size: 24px;
                                 font-weight: 300;
+
+                                @media screen and (max-width: 992px) {
+                                    font-size: 20px;
+                                    font-weight: 300;
+                                }
                             }
                         }
 
@@ -444,6 +496,11 @@ li {
                                 font-weight: 600;
                                 line-height: 52px;
                                 margin: 0;
+
+                                @media screen and (max-width: 992px) {
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                }
                             }
                         }
                     }
@@ -456,9 +513,30 @@ li {
 
 footer {
     .footer_img {
-        img{
+        img {
             display: block;
             width: 100%;
         }
+    }
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 34px;
+    right: 85px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #DEDDDC;
+    color: #909091;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+
+    &:hover {
+        background-color: #555;
+        color: #ffffff;
     }
 }
