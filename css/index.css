@@ -317,9 +317,24 @@ li {
 .product-feature {
   margin-top: 160px;
 }
+@media screen and (max-width: 576px) {
+  .product-feature {
+    margin-top: 100px;
+  }
+}
 .product-feature .title {
   margin-bottom: 89px;
   text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .product-feature .title {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-feature .title {
+    margin-bottom: 50px;
+  }
 }
 .product-feature .title h2 {
   font-size: 40px;
@@ -328,17 +343,42 @@ li {
 .product-feature .grid-container {
   margin: 0 46px 89px 99px;
 }
+@media screen and (max-width: 1050px) {
+  .product-feature .grid-container {
+    margin: 0 46px 89px 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-feature .grid-container {
+    margin: 0 46px 70px 46px;
+  }
+}
 @media screen and (max-width: 576px) {
   .product-feature .grid-container {
-    margin: 0 40px 89px 45px;
+    margin: 0 70px 89px 70px;
   }
 }
 .product-feature .grid-container .grid-content .grid-item {
   padding: 30px;
 }
+@media screen and (max-width: 1150px) {
+  .product-feature .grid-container .grid-content .grid-item {
+    padding: 15px;
+  }
+}
 @media screen and (max-width: 992px) {
   .product-feature .grid-container .grid-content .grid-item {
-    padding: 20px;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-feature .grid-container .grid-content .grid-item {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .product-feature .grid-container .grid-content .grid-item {
+    padding: 20px 10px;
   }
 }
 .product-feature .grid-container .grid-content .grid-item .card {
@@ -350,6 +390,11 @@ li {
   display: block;
   width: 100%;
 }
+@media screen and (max-width: 1150px) {
+  .product-feature .grid-container .grid-content .grid-item .card .thumbnail img {
+    padding: 20px 34px 0px;
+  }
+}
 .product-feature .grid-container .grid-content .grid-item .card .detail {
   margin: 0 23px;
 }
@@ -357,10 +402,22 @@ li {
   font-size: 24px;
   font-weight: 300;
 }
+@media screen and (max-width: 992px) {
+  .product-feature .grid-container .grid-content .grid-item .card .detail h1 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
 .product-feature .grid-container .grid-content .grid-item .card .detail p {
   color: #CBC9C9;
   font-size: 20px;
   font-weight: 300;
+}
+@media screen and (max-width: 992px) {
+  .product-feature .grid-container .grid-content .grid-item .card .detail p {
+    font-size: 18px;
+    font-weight: 300;
+  }
 }
 .product-feature .grid-container .grid-content .grid-item .card .pay {
   text-align: center;
@@ -380,6 +437,12 @@ li {
   font-size: 24px;
   font-weight: 300;
 }
+@media screen and (max-width: 992px) {
+  .product-feature .grid-container .grid-content .grid-item .card .pay .btn-buy a {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
 .product-feature .grid-container .grid-content .grid-item .card .pay .price {
   background-color: #DEDDDC;
   float: right;
@@ -391,8 +454,34 @@ li {
   line-height: 52px;
   margin: 0;
 }
+@media screen and (max-width: 992px) {
+  .product-feature .grid-container .grid-content .grid-item .card .pay .price p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
 
 footer .footer_img img {
   display: block;
   width: 100%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 34px;
+  right: 85px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #DEDDDC;
+  color: #909091;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+#myBtn:hover {
+  background-color: #555;
+  color: #ffffff;
 }
