@@ -258,11 +258,11 @@ li {
 .register .container .row .col-left .input {
   position: absolute;
   width: 482px;
-  height: 51px;
+  height: 50px;
   top: auto;
   right: auto;
   bottom: auto;
-  left: 120px;
+  left: 0px;
 }
 .register .container .row .col-left .input1 {
   top: 140px;
@@ -276,11 +276,11 @@ li {
 .register .container .row .col-right .input {
   position: absolute;
   width: 482px;
-  height: 51px;
+  height: 50px;
   top: auto;
   right: auto;
   bottom: auto;
-  left: 701px;
+  left: 600px;
 }
 .register .container .row .col-right .input1 {
   top: 140px;
@@ -291,11 +291,11 @@ li {
 .register .container .row .col-right .gender {
   position: absolute;
   width: 482px;
-  height: 51px;
+  height: 50px;
   top: 320px;
   right: auto;
   bottom: auto;
-  left: 701px;
+  left: 600px;
   display: flex;
   align-items: center;
 }
@@ -312,15 +312,12 @@ li {
   line-height: 36px;
 }
 .register .container .row .col-right .gender input[type=radio] {
-  /* remove standard background appearance */
   appearance: none;
-  /* create custom radiobutton appearance */
   display: inline-block;
-  width: 65px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   padding: 0;
-  /* background-color only for content */
   border: 10px solid #D9D9D9;
   background-color: #D9D9D9;
   cursor: pointer;
@@ -345,6 +342,10 @@ li {
   background-color: #AE18E2;
   border: none;
   cursor: pointer;
+}
+
+footer img {
+  width: 100%;
 }
 
 @media (max-width: 1279px) and (max-width: 992px) {
@@ -384,7 +385,7 @@ li {
   .register .container .row .col-left .input {
     position: relative;
     width: auto;
-    height: 51px;
+    height: 50px;
     top: auto;
     right: auto;
     bottom: auto;
@@ -408,7 +409,7 @@ li {
   .register .container .row .col-right .input {
     position: relative;
     width: auto;
-    height: 51px;
+    height: 50px;
     top: auto;
     right: auto;
     bottom: auto;
@@ -420,7 +421,7 @@ li {
   .register .container .row .col-right .gender {
     position: relative;
     width: auto;
-    height: 51px;
+    height: 50px;
     top: auto;
     right: auto;
     bottom: auto;

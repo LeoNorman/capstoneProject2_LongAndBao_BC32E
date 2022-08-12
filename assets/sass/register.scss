@@ -187,7 +187,7 @@
             .col-left {
                 .input {
                     @extend .input-register;
-                    @include position(absolute, 482px, 51px, auto, auto, auto, 120px)
+                    @include position(absolute, 482px, 50px, auto, auto, auto, 0px)
                 }
 
                 @for $i from 0 to 3 {
@@ -200,7 +200,7 @@
             .col-right {
                 .input {
                     @extend .input-register;
-                    @include position(absolute, 482px, 51px, auto, auto, auto, 701px)
+                    @include position(absolute, 482px, 50px, auto, auto, auto, 600px)
                 }
 
                 @for $i from 0 to 2 {
@@ -210,7 +210,7 @@
                 }
 
                 .gender {
-                    @include position(absolute, 482px, 51px, 320px, auto, auto, 701px);
+                    @include position(absolute, 482px, 50px, 320px, auto, auto, 600px);
                     display: flex;
                     align-items: center;
 
@@ -228,8 +228,8 @@
                     input[type='radio'] {
                         appearance: none;
                         display: inline-block;
-                        width: 65px;
-                        height: 50px;
+                        width: 40px;
+                        height: 40px;
                         border-radius: 50%;
                         padding: 0;
                         border: 10px solid $color-light-8;
@@ -255,6 +255,12 @@
             }
         }
     }
+}
+
+footer {
+  img {
+    width: 100%;
+  };
 }
 
 @include reponsive(xl) {
@@ -288,7 +294,7 @@
                     }
 
                     .input {
-                        @include position(relative, auto, 51px);
+                        @include position(relative, auto, 50px);
                         margin-top: 30px;
                     }
                 }
@@ -303,12 +309,12 @@
                     }
 
                     .input {
-                        @include position(relative, auto, 51px);
+                        @include position(relative, auto, 50px);
                         margin-top: 30px;
                     }
 
                     .gender {
-                        @include position(relative, auto, 51px);
+                        @include position(relative, auto, 50px);
                         margin: 50px 0;
 
                         @include reponsive(sm) {
@@ -346,4 +352,4 @@
             }
         }
     }
-  }
+}
