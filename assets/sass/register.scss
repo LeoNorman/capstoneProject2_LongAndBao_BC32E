@@ -226,15 +226,12 @@
                     }
 
                     input[type='radio'] {
-                        /* remove standard background appearance */
                         appearance: none;
-                        /* create custom radiobutton appearance */
                         display: inline-block;
                         width: 65px;
                         height: 50px;
                         border-radius: 50%;
                         padding: 0;
-                        /* background-color only for content */
                         border: 10px solid $color-light-8;
                         background-color: $color-light-8;
 
@@ -324,7 +321,7 @@
                                 font-size: $fs-xl-2;
                             }
                         }
-
+                        
                         input[type='radio'] {
                             width: 25px;
                             height: 25px;
@@ -339,10 +336,8 @@
                             }
                         }
                     }
-
                     button {
                         @include position(relative, 291px, 50px);
-
                         @include reponsive(sm) {
                             width: 100%;
                         }
